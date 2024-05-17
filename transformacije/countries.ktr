@@ -487,11 +487,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>GDP input</from>
-      <to>Sort rows</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Select values 6</from>
       <to>Sort rows</to>
       <enabled>Y</enabled>
@@ -499,11 +494,6 @@
     <hop>
       <from>Select values 5</from>
       <to>Sort rows</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Sort rows</from>
-      <to>Unique rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -524,6 +514,16 @@
     <hop>
       <from>Select values 3</from>
       <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>GDP input</from>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows</from>
+      <to>Unique rows</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -571,7 +571,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -658,7 +658,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -768,7 +768,7 @@
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>podatki\gdp.xls</name>
+      <name>podatki\gdp.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -780,7 +780,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -812,7 +812,7 @@
     <rootUriNameFieldName/>
     <extensionFieldName/>
     <sizeFieldName/>
-    <spreadsheet_type>JXL</spreadsheet_type>
+    <spreadsheet_type>POI</spreadsheet_type>
     <password>Encrypted </password>
     <attributes/>
     <cluster_schema/>
@@ -861,9 +861,9 @@
         <currency>€</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>11</length>
+        <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
     </fields>
     <attributes/>
@@ -919,7 +919,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -1006,7 +1006,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -1093,7 +1093,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -1440,7 +1440,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -1590,9 +1590,9 @@
         <currency>€</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>8</length>
+        <length>-1</length>
         <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <trim_type>both</trim_type>
       </field>
     </fields>
     <attributes/>
@@ -1639,7 +1639,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>688</xloc>
+      <xloc>720</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
