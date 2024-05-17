@@ -1,0 +1,22 @@
+# Ignore everything
+*
+
+# Unignore directories (since ignoring a directory also ignores its contents)
+!*/
+
+# Unignore everything inside the 'podatki' folder
+!podatki/
+!podatki/**
+
+!output/
+!output/**
+
+!transformacije/
+!transformacije/**
+
+!write-to-database/
+!write-to-database/**
+
+
+!.gitignore
+
